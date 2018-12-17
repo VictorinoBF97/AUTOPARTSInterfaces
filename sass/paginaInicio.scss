@@ -1,0 +1,357 @@
+@charset "UTF-8";
+/*LOGO*/
+#logo {
+  padding-left: 125px;
+  margin-top: -25px;
+  margin-bottom: 25px;
+  width: auto;
+  height: auto; }
+
+/* ENLACES DEL HEADER */
+  
+#registro {
+  color: #000;
+  float: right;
+  padding-right: 140px;
+  margin-top: -20px;
+ }
+.cuenta {
+  color: #000;
+  float: right;
+  margin-top: 100px;
+  padding-right: 120px;
+  display: flex; }
+
+.micuenta {
+  color: #000;
+  padding-right: 30px; }
+
+.micesta {
+  color: #000;
+  padding-right: 30px; }
+
+.ajustes {
+  color: #000;
+ }
+
+/*BARRA DE NAVEGACION*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font: 0.75em/1.5 sans-serif;
+  background: white;
+  margin-top: 50px; }
+
+body {
+  overflow: auto; }
+
+/**
+ * Tabs object.
+ *
+ * 1. Tables (kinda) for layout!
+ * 2. This is the magic bit; make all children occupy equal width.
+ * 3. Required to make the tabs fill their container.
+ * 4. Make each tab pack up horizontally.
+ * 5. Ensure the hit area covers the whole tab.
+ */
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  /* [1] */
+  table-layout: fixed;
+  /* [2] */
+  width: 100%;
+  /* [3] */ }
+
+.tabs__item {
+  width: 100%;
+  float: left; }
+
+@media screen and (min-width: 40em) {
+  .tabs__item {
+    display: table-cell;
+    /* [4] */
+    float: none;
+    width: auto; } }
+.tabs__link {
+  display: block;
+  /* [5] */ }
+
+/**
+ * Primary nav. Extends .tabs.
+ *
+ * 1. Stop tabs corners leaking out beyond our 4px round.
+ */
+.primary-nav {
+  text-align: center;
+  border-radius: 0;
+  overflow: hidden;
+  /* [1] */ }
+
+.primary-nav a {
+  padding: .75em 1em;
+  color: white;
+  background: black;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid #000;
+  font-family: Share, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.75em; }
+
+.primary-nav a:hover {
+  color: black;
+  background: #1067ca; }
+
+/* Responsive-nav.js */
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1; }
+
+.nav-collapse.opened {
+  max-height: 9999px; }
+
+.disable-pointer-events {
+  pointer-events: none !important; }
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative; }
+
+  .js .nav-collapse.closed {
+    max-height: none; }
+
+  .nav-toggle {
+    display: none; } }
+.nav-collapse {
+  list-style: none;
+  width: 100%;
+  float: left;
+  color: #000; }
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 55px;
+  float: right; }
+
+.nav-toggle:before {
+  color: #1067ca;
+  /* Si editamos el color cambiamos el color de la interaccion Javascript del navegador */
+  font-family: "responsivenav", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 28px;
+  text-transform: none;
+  position: absolute;
+  content: "Ôëí";
+  text-indent: 0;
+  text-align: center;
+  line-height: 55px;
+  speak: none;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.nav-toggle.active::before {
+  font-size: 24px;
+  content: "x"; }
+
+footer {
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color: white; }
+
+/*# sourceMappingURL=paginaInicio.css.map */
+
+/* SECCIÓN MARCAS NAVEGADOR PRINCIPAL */
+.contenedor{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display:inline-flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  align-content: stretch;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.marca{
+  -webkit-animation-duration: 0.75s;
+  animation-duration:0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  
+}
+.marca:hover{
+  transform: scale(1,1.1);
+}
+
+a img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* FORMULARIO DE CONTACTO */
+form{
+  margin: 50px;
+  margin-left: 50px;
+}
+form header {
+  margin: 0 0 20px 0; 
+}
+form header div {
+  font-size: 90%;
+  color: #999;
+}
+form header h2 {
+  margin: 0 0 5px 0;
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+	width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+form > div > fieldset label {
+	font-size: 90%;
+}
+fieldset {
+	border: 0;
+  padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label,
+  legend {
+	  width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%; 
+  }
+}
+@media (min-width: 1200px) {
+  form > div > label,
+	legend {
+  	text-align: right;
+  }
+}
+
+/* ANIMACIÓN BOTÓN FORMULARIO CONTACTO */
+.campo{
+  border-radius: 5px;
+  background-color: #6591b8;
+}
+
+.boton{
+  text-decoration:none;
+font-weight:600;
+font-size:20px;
+color:#000000;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:20px;
+background-color:#6591b8;
+}
+
+/* PÁGINA PRINCIPAL */

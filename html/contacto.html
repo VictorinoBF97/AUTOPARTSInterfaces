@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AUTOPARTS --CONTACTO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/paginaInicio.css" href="../css/reset.css" />
+        <link rel="shortcut icon" href="../icons/pestañaNegra.png" />
+        
+    </head>
+
+    <body>  
+        <header>
+        <!-- LOGO DE LA WEB-->
+        <a href="./paginaInicio.html"><img src="../images/logoweb.jpg" id="logo" class="logo">
+
+        <!-- REGISTRO Y LOGIN-->
+            <a href="../html/registro.html" id="registro"><u>CREAR NUEVA CUENTA CLIENTE</u> <i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+
+            <div class="cuenta" translate="yes">
+            <a href="./usuario/cuenta.html" class="micuenta"><i class="	glyphicon glyphicon-user"></i>MI CUENTA</a>
+            <a href="./usuario/cesta.html" class="micesta"><i class="glyphicon glyphicon-shopping-cart"></i>MI CESTA</a>
+            <a href="./usuario/ajustes.html" class="ajustes"><i class="glyphicon glyphicon-wrench"></i>AJUSTES</a>
+            </div>
+        <!-- BARRA DE BÚSQUEDA -->
+        
+
+                <!-- BARRA DE NAVEGACIÓN -->
+                <!-- TRANSLATE: YES -Es necesario que el usuario identifique el navegador principal sea cual sea -->
+        <nav class="nav-collapse" role="navigation" translate="yes">
+
+                    <ul class="tabs primary-nav">
+                            <li class="tabs__item">
+                                <a href="./paginaInicio.html" class="tabs__link">Inicio</a>
+                            </li>
+                            <li class="tabs__item">
+                                <a href="./marcas.html"  class="tabs__link">Marcas</a>
+                            </li>
+                            <li class="tabs__item">
+                                <a href="./neumaticos.html" class="tabs__link">Neumáticos</a>
+                            </li>
+                            <li class="tabs__item">
+                                <a href="./aceite.html" class="tabs__link">Aceite</a>
+                            </li>
+                            <li class="tabs__item">
+                                <a href="./contacto.html" class="tabs__link">Contacto</a>
+                            </li>
+                    </ul>
+         
+                  
+                  
+        </nav>
+
+    </header>
+
+    <section>
+        <!-- FORMULARIO DE CONTACTO DE LA BARRA DE NAVEGACIÓN -->
+            <form action="#">
+
+                    <header>
+                      <h2>Formulario de contacto</h2>
+                      <div>Si quiere realizar alguna alguna aportación a la página o ha tenido algún problema haganoslo saber rellenando el siguiente formulario</div>
+                    </header>
+                    
+                    <div>
+                      <label class="desc" id="title1" for="Field1">Nombre Completo</label>
+                      <div>
+                        <input id="Field1" name="Field1" type="text" class="campo" value="" size="8" tabindex="1">
+                      </div>
+                    </div>
+                      
+                    <div>
+                      <label class="desc" id="title3" for="Field3">
+                        Correo Electrónico
+                      </label>
+                      <div>
+                          <!-- AUTOCOMPLETE OFF, ya que los navegadores tienden a guardar información del usuario cuando inicia sesión en la página y sugiere posibles completaciones para los campos que el usuario está escribiendo. Estas caracteristicas pueden ser un problema de privacidad para los usuarios, ya que mientras los navegadores pueden permitir a los usuarios a inhabilitarlas, estos están usualmente habilitados por defecto-->
+                        <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3" class="campo" autocomplete="off"> 
+                     </div>
+                    </div>
+                      
+                    <div>
+                      <label class="desc" id="title4" for="Field4">
+                        Descripción del problema o sugerencia
+                      </label>
+                    
+                      <div>
+                        <textarea id="Field4" name="Field4" class="campo" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+                      </div>
+                    </div>
+                      
+                    <div>
+                      <fieldset>
+                      <!-- SELECT 1 -->
+                        <legend id="title5" class="desc">
+                          Tipo de consulta
+                        </legend>
+                        
+                        <div>
+                            <input id="radioDefault_5" name="Field5" type="hidden" value="">
+                            <div>
+                                <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                                <label class="choice" for="Field5_0">Sugerencia</label>
+                            </div>
+                          <div>
+                              <input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+                              <label class="choice" for="Field5_1">Queja o reclamación</label>
+                          </div>
+                          <div>
+                              <input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
+                              <label class="choice" for="Field5_2">Interés o duda</label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                    
+                    <div>
+                      <fieldset>
+                          <!-- SELECT 2 -->
+                        <legend id="title6" class="desc">
+                          ¿Cómo prefiere que contactemos con usted?
+                        </legend>
+                        <div>
+                        <div>
+                            <input id="Field6" name="Field6" type="checkbox" value="First Choice" tabindex="8">
+                            <label class="choice" for="Field6">Llamada telefónica (Deje su número de teléfono en la descripción)</label>
+                        </div>
+                        <div>
+                            <input id="Field7" name="Field7" type="checkbox" value="Second Choice" tabindex="9">
+                            <label class="choice" for="Field7">Correo electrónico</label>
+                        </div>
+                        <div>
+                            <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
+                            <label class="choice" for="Field8">SMS</label>
+                        </span>
+                        </div>
+                      </fieldset>
+                    </div>
+                    
+                    <div>
+                      <label class="desc" id="title106" for="Field106">
+                          Disponibilidad horaria
+                      </label>
+                      <div>
+                      <select id="Field106" name="Field106" class="field select medium" tabindex="11"> 
+                        <option value="First Choice">Mañana</option>
+                        <option value="Second Choice">Tarde</option>
+                        <option value="Third Choice">Noche</option>
+                      </select>
+                      </div>
+                    </div>
+                    
+                    <div>
+                          <div>
+                            <input class="boton" id="saveForm" name="saveForm" type="submit" value="Enviar">
+                      </div>
+                      </div>
+                    
+                  </form>
+
+    </section>
+    <footer>
+
+    </footer>
+    </body>
+    </html>
